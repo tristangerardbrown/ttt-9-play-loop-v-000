@@ -43,6 +43,7 @@ def play(board)
     if counter >= 9
     break
   end
+end 
 end
 
 # Define your play method below
