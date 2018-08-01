@@ -36,9 +36,13 @@ def turn(board)
 end
 
 def play(board)
-  while valid_move?(board, index) == true
-    turn(board)
-  end 
+  counter = 0
+  loop do
+  counter +=1
+  turn(board)
+  while counter >= 9
+    break 
+  end
 end
 
 # Define your play method below
